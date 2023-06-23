@@ -1,0 +1,20 @@
+{
+    "version": "2.0",
+    "extensions": {
+        "durableTask": {
+            "hubName": "lockedentityrepro",
+            "tracing": {
+                "distributedTracingEnabled": true,
+                "distributedTracingProtocol": "W3CTraceContext"
+            }
+        }
+    },
+    "logging": {
+        "applicationInsights": {
+            "samplingSettings": {
+                "isEnabled": true,
+                "excludedTypes": "Request"
+            }
+        }
+    }
+}
